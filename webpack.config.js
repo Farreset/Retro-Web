@@ -34,18 +34,6 @@ module.exports = {
         useShortDoctype: true
       }
     }),
-    new HtmlWebpackPlugin({
-      filename: 'home.html',
-      template: 'frontend/index.html',
-      chunks: ['app']
-      
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: '/src/home.html',
-      chunks: ['app']
-      
-    }),
     new MiniCssExtractPlugin({
       filename: "css/bundle.css"
     })
