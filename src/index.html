@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The FrontEnder Fun Page</title>
+    <title>Game World</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo&family=Gugi&family=Monda:wght@700&display=swap"
       rel="stylesheet"
@@ -18,62 +18,48 @@
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/dark-coders.css" />
+   
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="logo">The Front<span>ender</span></div>
 
+    <nav class="navbar">
+      <video autoplay="autoplay" loop="loop" id="video" preload="auto">
+        <source src="../video/consolas.mp4" type="video/mp4" />
+      </video>
+      <div class="logo">GAME<span>WORLD</span></div>
+     
       <input type="checkbox" id="burger-checkbox" />
       <label for="burger-checkbox" class="burger-label"></label>
-
+   
       <ul class="navbar-list">
-        <li class="navbar-item"><a href="#el-juego">El juego</a></li>
-        <li class="navbar-item"><a href="#descargas">Descargas</a></li>
-        <li class="navbar-item"><a href="#comunidad">Comunidad</a></li>
-        <li class="navbar-item"><a href="#galeria">Galería</a></li>
-        <li class="navbar-item"><a href="#dirty-coders">Dirty Coders</a></li>
+        <li class="navbar-item"><a href="#el-juego">SOBRE EL PROYECTO </a></li>
+        <li class="navbar-item"><a href="#descargas">DESCARGAS</a></li>
+        <li class="navbar-item"><a href="#comunidad">COMUNIDAD</a></li>
+        <li class="navbar-item"><a href="#galeria">CONSOLAS</a></li>
+        <li class="navbar-item"><a href="#dirty-coders">ALGUNOS JUEGOS</a></li>
+        <li class="navbar-item"><a href="#register">REGISTRARSE</a></li>
       </ul>
     </nav>
 
     <header class="header">
       <div class="header-overlay"></div>
       <div class="header-content container">
-        <h1 class="logo">The Front<span>ender</span></h1>
-        <p class="tagline">Enfréntate a tus bugs</p>
-        <p class="promo-text">
-          Adéntrate en un mundo lleno de pixeles, lintings y protocolos que te
-          acechan tras cada línea de código. ¿Te atreves?
-        </p>
+        <h1 class="logo">GAME<span>WORLD</span></h1>
+    
       </div>
     </header>
 
     <main class="container">
       <section id="el-juego">
-        <h1>El juego</h1>
+        <h1>SOBRE EL PROYECTO</h1>
 
         <p>
-          <span class="logo">The Front<span>ender</span></span> es el nuevo
-          juego creado por <b>KeepGaming</b> en el que una simple web developer
-          debe profundizar en las cloacas de internet para crear
-          <b>The Ultimate Website</b>, el sitio web definitivo que revolucionará
-          el mundo de la creación web.
-        </p>
-
-        <p>
-          Antes de darse cuenta estará inmersa en miles de líneas de código,
-          estilos CSS, imágenes irreductibles, vídeos gigantescos de mala
-          calidad y textos sin formato. Ella es la última esperanza para los
-          <b>Frikilopers</b>, un grupo de élite del desarrollo web... aunque
-          todabía no lo saben.
-        </p>
-
-        <p>
-          Mientras tanto, el sindicato de los <b>Dirty Coders</b> pondrá todo su
-          empeño en crear toda clase de obstáculos para que nuestra heroína no
-          alcance la última pantalla de internet: desde los más simples errores
-          de linting o errores <b>404 Not Found</b> hasta la más temida de las
-          páginas... <b>500 Server Error</b>.
+          <span class="logo">GAME<span>WORLD</span></span> es un nuevo proyecto para
+          los gamers más veteranos, donde todas las consolas antiguas y modernas se
+          juntan para crear GAMECAST la consola definitiva. Te atreves a volver a la
+          época de los polígonos y píxeles o eres más de explotar la RAM y ponerlo
+          todo en ultra.
         </p>
 
         <p class="xl">
@@ -82,7 +68,7 @@
       </section>
 
       <section id="descargas">
-        <h1>Descargas</h1>
+        <h1>DESCARGAS</h1>
 
         <p>
           Existen versiones del juego en diferentes plataformas y, por supuesto
@@ -117,7 +103,7 @@
       </section>
 
       <section id="comunidad">
-        <h1>Comunidad</h1>
+        <h1>COMUNIDAD</h1>
         <form action="" id="subscribe">
           <p>
             <label for="nombre">Nombre:</label>
@@ -167,174 +153,170 @@
       </section>
 
       <section id="galeria">
-        <h1>Galería</h1>
+        <h1>CONSOLAS</h1>
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="./img/gallery/2586343.jpg" alt="" />
+            <img src="./img/gallery/N64.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Arranca el juego
+                NINTEDO 64
               </div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="./img/gallery/2591932.jpg" alt="" />
+            <img src="./img/gallery/GC.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Línea a línea, el código crece
+                GAME CUBE
               </div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="./img/gallery/3002641.jpg" alt="" />
+            <img src="./img/gallery/DS.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Saludamos a las nuevas funcionalidades
+                NINTENDO DS
               </div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="./img/gallery/6447.jpg" alt="" />
+            <img src="./img/gallery/SNES.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Qué buena pinta tiene todo
+                SUPER NES
               </div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="./img/gallery/889.jpg" alt="" />
+            <img src="./img/gallery/GBA.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Ajustas hasta el &laquo;pixel perfect&raquo;
+               GAME BOY ADVANCE
               </div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="./img/gallery/901.jpg" alt="" />
+            <img src="./img/gallery/GB.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Ajustas hasta el &laquo;pixel perfect&raquo;
+               GAME BOY;
               </div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="./img/gallery/O68I5L0.jpg" alt="" />
+            <img src="./img/gallery/NES.jpg" alt="" />
             <div class="gallery-overlay">
               <div class="content">
-                Documentando...
+                NES
               </div>
             </div>
           </div>
-          <div class="gallery-item">
-            <img src="./img/gallery/OFDZ4S0.jpg" alt="" />
-            <div class="gallery-overlay">
-              <div class="content">
-                Listo para la última revisión
-              </div>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="./img/gallery/OIFWVJ0.jpg" alt="" />
-            <div class="gallery-overlay">
-              <div class="content">
-                Producto terminado
-              </div>
-            </div>
-          </div>
+         
+          
         </div>
       </section>
 
       <section id="dirty-coders">
-        <h1>Dirty Coders</h1>
+        <h1>ALGUNOS JUEGOS</h1>
         <p>
-          En un mundo donde el libro &laquo;Clean Code&raquo; de Robin C. Martin
-          se ha convertido en la biblia de la programación, este oscuro grupo
-          defiende el código spaghetti, el código sin indentación, los puntos y
-          comas y las comillas dobles.
+         Estos son algunos de los retos que el gamer tendra que superar para porder 
+         autocoronarse como el mejor. Consigue la mayor puntuacion o el mayor progreso
+         para retar a los demas.
         </p>
-        <p>
-          Si los ves por la calle, no te acerques, los <b>Frikilopers</b>
-          se encargarán de ellos... probablemente...
-        </p>
+       
         <div class="coders-grid">
           <div class="coders-card">
-            <h1 class="card-title">Erebus</h1>
+            <h1 class="card-title">TETRIS</h1>
             <div class="card-content">
               <img
-                src="./img/characters/erebus_by_twohornsunited.jpg"
-                alt="Erebus"
+                src="./img/characters/tetris.jpg"
+             
               />
             </div>
-            <div class="card-actions">
-              <a href="#" class="card-link">espacios</a>
-              <a href="#" class="card-link">tabs</a>
-            </div>
+      
           </div>
           <div class="coders-card">
-            <h1 class="card-title">Glitch MK-V</h1>
+            <h1 class="card-title">PAC-MAN</h1>
             <div class="card-content">
               <img
-                src="./img/characters/glitch_mk_v_by_twohornsunited.jpg"
-                alt="Glitch MK-V"
+                src="./img/characters/PAC-MAN.jpg"
+              
               />
             </div>
-            <div class="card-actions">
-              <a href="#" class="card-link">espacios</a>
-              <a href="#" class="card-link">tabs</a>
-            </div>
+         
           </div>
           <div class="coders-card">
-            <h1 class="card-title">HK-404E</h1>
+            <h1 class="card-title">CONTRA</h1>
             <div class="card-content">
               <img
-                src="./img/characters/hk_404e_by_twohornsunited.jpg"
-                alt="HK-404E"
+                src="./img/characters/CONTRA.jpg"
+             
               />
             </div>
-            <div class="card-actions">
-              <a href="#" class="card-link">espacios</a>
-              <a href="#" class="card-link">tabs</a>
-            </div>
+         
           </div>
           <div class="coders-card">
-            <h1 class="card-title">Progenitor</h1>
+            <h1 class="card-title">DOOM</h1>
             <div class="card-content">
               <img
-                src="./img/characters/progenitor_by_twohornsunited.jpg"
-                alt="Progenitor"
+                src="./img/characters/DOOM.jpg"
+               
               />
             </div>
-            <div class="card-actions">
-              <a href="#" class="card-link">espacios</a>
-              <a href="#" class="card-link">tabs</a>
-            </div>
+      
           </div>
           <div class="coders-card">
-            <h1 class="card-title">The Panzersoeldner</h1>
+            <h1 class="card-title">MARIO KART</h1>
             <div class="card-content">
               <img
-                src="./img/characters/the_panzersoeldner_by_twohornsunited.jpg"
-                alt="The Panzersoeldner"
+                src="./img/characters/MK64.jpg"
+    
               />
             </div>
-            <div class="card-actions">
-              <a href="#" class="card-link">espacios</a>
-              <a href="#" class="card-link">tabs</a>
+         
+          </div>
+       
+          <div class="coders-card">
+            <h1 class="card-title">THE LEGEND OF ZELDA </h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/TLOZOOT.jpg"
+            
+              />
             </div>
+            
           </div>
           <div class="coders-card">
-            <h1 class="card-title">The Plague of Ages</h1>
+            <h1 class="card-title">SUPER SMASH BROS MELEE</h1>
             <div class="card-content">
               <img
-                src="./img/characters/the_plague_of_ages_by_twohornsunited.jpg"
-                alt="The Plague of Ages"
+                src="./img/characters/SSBM.jpg"
+            
               />
             </div>
-            <div class="card-actions">
-              <a href="#" class="card-link">espacios</a>
-              <a href="#" class="card-link">tabs</a>
-            </div>
+            
           </div>
+          <div class="coders-card">
+            <h1 class="card-title">METROID PRIME</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/MPE.jpg"
+            
+              />
+            </div>
+            
+          </div>
+          <div class="coders-card">
+            <h1 class="card-title">F-ZERO</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/F-ZERO.jpg"
+            
+              />
+            </div>
+            
+          </div>
+     
         </div>
       </section>
     </main>

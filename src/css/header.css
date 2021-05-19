@@ -1,5 +1,5 @@
 .header {
-  background: url("../img/bg.jpg") bottom center;
+  background: url("../video/consolas.mp4");
   background-size: cover;
   height: 100vh;
 
@@ -23,7 +23,14 @@
   position: relative;
   z-index: 30;
 }
-
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .header-overlay {
   position: absolute;
   top: 0;
@@ -31,7 +38,7 @@
   left: 0;
   right: 0;
   background-color: black;
-  background: url("../img/simple-pattern-overlay.png") top left repeat;
+  background: url("../img/simple-s-overlay.png") top left repeat;
   opacity: 0.5;
   z-index: 31;
 }
