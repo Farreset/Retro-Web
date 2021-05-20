@@ -7,8 +7,8 @@ const devMode = process.env.NODE_ENV !== 'production'
 module.exports = {
   entry: {
     app: './frontend/app.js',
-    app1: './frontend/app1.js',
-    app2: './frontend/app2.js'
+    app1: './frontend/app1.js'
+  
   },
   mode: 'development',
   output: {
@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin( {
-      filename: 'index.html',
+      filename: 'index1.html',
       template: './frontend/index.html',
       chunks:['app'],
       minify: {
@@ -41,9 +41,9 @@ module.exports = {
       }
     } ),
        new HtmlWebpackPlugin( {
-      filename: 'home.html',
-      template: './src/home.html',
-      chunks:'[app]',
+      filename: 'index2.html',
+      template: './frontend/home.html',
+      chunks:'[app1]',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -53,7 +53,7 @@ module.exports = {
         useShortDoctype: true
       }
     }),
-    
+       
     new MiniCssExtractPlugin({
       filename: "css/bundle.css"
     })
