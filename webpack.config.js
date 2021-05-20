@@ -29,8 +29,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin( {
       filename: 'index1.html',
-      template: './frontend/index.html',
-      chunks:'[app]',
+      template: './frontend/index1.html',
+      chunks:['app'],
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -42,8 +42,8 @@ module.exports = {
     } ),
        new HtmlWebpackPlugin( {
       filename: 'index2.html',
-      template: './frontend/home.html',
-      chunks:'[app1]',
+      template: './frontend/index2.html',
+      chunks:['app1'],
       minify: {
         collapseWhitespace: true,
         removeComments: true,
