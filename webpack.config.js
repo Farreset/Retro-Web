@@ -28,6 +28,19 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin( {
+      filename: 'index.html',
+      template: '/src/index.html',
+      chunks:[],
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
+    } ),
+    new HtmlWebpackPlugin( {
       filename: 'index1.html',
       template: './frontend/index1.html',
       chunks:['app'],
