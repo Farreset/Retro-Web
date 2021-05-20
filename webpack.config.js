@@ -30,7 +30,7 @@ module.exports = {
     new HtmlWebpackPlugin( {
       filename: 'index1.html',
       template: './frontend/index.html',
-      chunks:['app'],
+      chunks:'[app]',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
