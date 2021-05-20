@@ -5,11 +5,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  entry: './frontend/app.js',
+  entry: {
+    app: './frontend/app.js',
+    app1: './frontend/app1.js',
+    app2: './frontend/app2.js'
+  },
   mode: 'development',
   output: {
     path: path.join(__dirname, 'backend/public'),
-    filename: 'js/bundle.js'
+    filename: 'js/[name].js'
   },
   module : {
     rules: [
@@ -23,8 +27,23 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin( {
+      filename: 'index.html',
       template: './frontend/index.html',
+      chunks:['app'],
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
+    } ),
+       new HtmlWebpackPlugin( {
+      filename: 'home.html',
+      template: './src/home.html',
+      chunks:'[app]',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
